@@ -1,4 +1,5 @@
 requests
+seaborn
 beautifulsoup4
 pandas
 transformers
@@ -10,4 +11,4 @@ nltk
 matplotlib
 gradio
 python-dotenv
-feedparser  # optional, for RSS feeds
+feedparser  
