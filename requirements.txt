@@ -13,17 +13,13 @@ pydantic>=2.7.0
 pandas>=2.2.0
 pyarrow>=16.0.0          # parquet support for pandas
 
-# --- Sentiment (used in next module) ---
-transformers>=4.41.0
-torch>=2.3.0
-anthropic>=0.28.0        # Claude API for LLM-based scoring
+# NOTE: Sentiment models (transformers, torch, anthropic) are loaded server-side only
+# DO NOT include in requirements.txt for deployment - too heavy!
+# transformers>=4.41.0    # SERVER ONLY
+# torch>=2.3.0           # SERVER ONLY
+# anthropic>=0.28.0      # SERVER ONLY
 
-# --- Testing ---
-pytest>=8.2.0
-pytest-asyncio>=0.23.0
-httpx>=0.27.0            # for FastAPI TestClient
-
-# --- Frontend / Dashboard ---
+# --- Frontend / Dashboard (FOR STREAMLIT DEPLOYMENT) ---
 streamlit>=1.28.0
 plotly>=5.18.0
 numpy>=1.24.0

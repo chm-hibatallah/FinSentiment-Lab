@@ -49,10 +49,7 @@ TICKER_COLORS = {
 }
 
 # Get API base from secrets or use default
-try:
-    API_BASE = st.secrets.get("api_base", "http://localhost:8000")
-except:
-    API_BASE = "http://localhost:8000"
+API_BASE = st.secrets.get("api_base", "http://localhost:8000")
 
 # ─── API Calls ────────────────────────────────────────────────────────────
 

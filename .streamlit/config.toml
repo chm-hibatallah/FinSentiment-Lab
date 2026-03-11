@@ -7,15 +7,10 @@ font = "sans serif"
 
 [client]
 showErrorDetails = false
-toolbarMode = "viewer"
 
 [logger]
 level = "info"
 
-[server]
-port = 8503
-headless = true
-runOnSave = true
-
 [browser]
 gatherUsageStats = false
+

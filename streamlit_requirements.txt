@@ -1,0 +1,16 @@
+# Minimal requirements for Streamlit Cloud deployment
+# DO NOT include torch/transformers - too heavy, will timeout
+
+# --- Web framework ---
+requests>=2.32.0
+
+# --- Data processing ---
+pandas>=2.2.0
+numpy>=1.24.0
+
+# --- Frontend / Dashboard ---
+streamlit>=1.28.0
+plotly>=5.18.0
+
+# --- Utilities ---
+python-dotenv>=1.0.0
